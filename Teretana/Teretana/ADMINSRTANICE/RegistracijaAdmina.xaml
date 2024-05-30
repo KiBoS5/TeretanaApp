@@ -1,0 +1,30 @@
+﻿<Window x:Class="Teretana.ADMINSRTANICE.RegistracijaAdmina"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Teretana.ADMINSRTANICE"
+        mc:Ignorable="d"
+        Title="RegistracijaAdmina" Height="450" Width="341" Background="#FFBEB9B9" ResizeMode="NoResize">
+    <Grid Margin="0,0,27,0">
+        <Label Content="USERNAME" HorizontalAlignment="Left" Height="28" Margin="60,90,0,0" VerticalAlignment="Top" Width="71"/>
+        <Label Content="Prezime" HorizontalAlignment="Left" Height="28" Margin="60,189,0,0" VerticalAlignment="Top" Width="71"/>
+        <Label Content="SIFRA" HorizontalAlignment="Left" Height="28" Margin="60,123,0,0" VerticalAlignment="Top" Width="71"/>
+        <Label Content="Ime" HorizontalAlignment="Left" Height="28" Margin="60,156,0,0" VerticalAlignment="Top" Width="71"/>
+        <Label Content="Email" HorizontalAlignment="Left" Height="28" Margin="60,255,0,0" VerticalAlignment="Top" Width="71"/>
+        <Label Content="Adresa" HorizontalAlignment="Left" Height="28" Margin="60,222,0,0" VerticalAlignment="Top" Width="71"/>
+        <TextBox Name="prezime" HorizontalAlignment="Left" Height="24" Margin="136,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <TextBox Name="user" HorizontalAlignment="Left" Height="24" Margin="136,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <TextBox Name="sifra" HorizontalAlignment="Left" Height="24" Margin="136,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <TextBox Name="ime" HorizontalAlignment="Left" Height="24" Margin="136,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <TextBox Name="telefon" HorizontalAlignment="Left" Height="24" Margin="136,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <TextBox Name="adresa" HorizontalAlignment="Left" Height="24" Margin="136,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <TextBox Name="email" HorizontalAlignment="Left" Height="24" Margin="136,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <Label Content="Telefon" HorizontalAlignment="Left" Height="28" Margin="60,288,0,0" VerticalAlignment="Top" Width="71"/>
+        <Button Content="NAZAD" HorizontalAlignment="Left" Height="32" Margin="59,342,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click" Background="#FFA7A7A7" BorderBrush="Black"/>
+        <Button Content="REGISTRUJ" HorizontalAlignment="Left" Height="32" Margin="175,342,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click_1" Background="#FFA7A7A7" BorderBrush="Black"/>
+        <Label Content="REGISTRACIJA ADMINA" HorizontalAlignment="Left" Height="30" Margin="88,32,0,0" VerticalAlignment="Top" Width="150"/>
+        <Separator HorizontalAlignment="Left" Height="13" Margin="61,67,0,0" VerticalAlignment="Top" Width="204" Background="Black"/>
+
+    </Grid>
+</Window>

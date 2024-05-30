@@ -1,0 +1,35 @@
+﻿<Page x:Class="Teretana.ADMINSRTANICE.Oprema"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Teretana.ADMINSRTANICE"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Oprema">
+
+    <Grid Background="#FFBEB9B9">
+        <Label Content="Naziv" HorizontalAlignment="Left" Height="28" Margin="22,58,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label Content="Kolicina" HorizontalAlignment="Left" Height="28" Margin="22,156,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label Content="Opis" HorizontalAlignment="Left" Height="28" Margin="22,90,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label Content="Max tezina" HorizontalAlignment="Left" Height="28" Margin="22,124,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label Content="ID lokacije" HorizontalAlignment="Left" Height="28" Margin="22,222,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label Content="Datum nabavke" HorizontalAlignment="Left" Height="28" Margin="22,190,0,0" VerticalAlignment="Top" Width="96"/>
+        <DatePicker Name="datum" HorizontalAlignment="Left" Margin="118,194,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="kolicina" HorizontalAlignment="Left" Height="24" Margin="118,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <TextBox Name="naziv"  HorizontalAlignment="Left" Height="24" Margin="118,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <TextBox Name="opis" HorizontalAlignment="Left" Height="24" Margin="118,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <TextBox Name="max" HorizontalAlignment="Left" Height="24" Margin="118,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <Button Content="Dodaj" HorizontalAlignment="Left" Height="25" Margin="22,319,0,0" VerticalAlignment="Top" Width="66" Click="Button_Click" Background="#FFA7A7A7" BorderBrush="Black"/>
+        <Button Content="Ocisti polja" HorizontalAlignment="Left" Height="25" Margin="118,363,0,0" VerticalAlignment="Top" Width="66" Click="Button_Click_3" Background="#FFA7A7A7" BorderBrush="Black"/>
+        <Button Content="Obrisi" HorizontalAlignment="Left" Height="25" Margin="118,319,0,0" VerticalAlignment="Top" Width="66" Click="Button_Click_1" Background="#FFA7A7A7" BorderBrush="Black"/>
+        <Button Content="Izmeni" HorizontalAlignment="Left" Height="25" Margin="22,363,0,0" VerticalAlignment="Top" Width="66" Click="Button_Click_2" Background="#FFA7A7A7" BorderBrush="Black"/>
+        <DataGrid x:Name="ODataGrid" HorizontalAlignment="Left" Height="361" Margin="247,43,0,0" VerticalAlignment="Top" Width="515" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="ODataGrid_SelectionChanged"/>
+        <TextBox Name="id" HorizontalAlignment="Left" Height="24" Margin="118,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" Visibility="Hidden"/>
+        <ComboBox Name="lokacija" HorizontalAlignment="Left" Margin="118,224,0,0" VerticalAlignment="Top" Width="102" Height="30" Loaded="load"/>
+        <Separator HorizontalAlignment="Left" Height="13" Margin="22,264,0,0" VerticalAlignment="Top" Width="204" Background="Black"/>
+        <Separator HorizontalAlignment="Left" Height="13" Margin="22,43,0,0" VerticalAlignment="Top" Width="204" Background="Black"/>
+        <Label Content="OPREMA" HorizontalAlignment="Left" Height="28" Margin="70,15,0,0" VerticalAlignment="Top" Width="142" FontWeight="Bold" FontSize="18" FontFamily="Arial Black"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,41 @@
+﻿<Page x:Class="Teretana.ADMINSRTANICE.Zaposleni"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Teretana.ADMINSRTANICE"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Zaposleni">
+
+    <Grid Background="#FFBEB9B9" Margin="0,0,-166,0">
+        <Label Content="USERNAME" HorizontalAlignment="Left" Height="28" Margin="13,39,0,0" VerticalAlignment="Top" Width="84"/>
+        <Label Content="Prezime" HorizontalAlignment="Left" Height="28" Margin="13,138,0,0" VerticalAlignment="Top" Width="84"/>
+        <Label Content="SIFRA" HorizontalAlignment="Left" Height="28" Margin="13,72,0,0" VerticalAlignment="Top" Width="84"/>
+        <Label Content="Ime" HorizontalAlignment="Left" Height="28" Margin="13,105,0,0" VerticalAlignment="Top" Width="84"/>
+        <Label Content="Adresa" HorizontalAlignment="Left" Height="28" Margin="13,204,0,0" VerticalAlignment="Top" Width="84"/>
+        <Label Content="Tip posla" HorizontalAlignment="Left" Height="28" Margin="13,171,0,0" VerticalAlignment="Top" Width="84"/>
+        <TextBox Name="prezime" HorizontalAlignment="Left" Height="24" Margin="97,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <TextBox Name="user" HorizontalAlignment="Left" Height="24" Margin="97,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <TextBox Name="sifra" HorizontalAlignment="Left" Height="24" Margin="97,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <TextBox Name="ime" HorizontalAlignment="Left" Height="24" Margin="97,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <Button Content="Dodaj" HorizontalAlignment="Left" Height="25" Margin="22,356,0,0" VerticalAlignment="Top" Width="66" Click="Button_Click" Background="#FFA7A7A7" BorderBrush="Black"/>
+        <Button Content="Obrisi polja" HorizontalAlignment="Left" Height="25" Margin="118,400,0,0" VerticalAlignment="Top" Width="66" Click="Button_Click_3" Background="#FFA7A7A7" BorderBrush="Black"/>
+        <Button Content="Obrisi" HorizontalAlignment="Left" Height="25" Margin="118,356,0,0" VerticalAlignment="Top" Width="66" Click="Button_Click_1" Background="#FFA7A7A7" BorderBrush="Black"/>
+        <Button Content="Izmeni" HorizontalAlignment="Left" Height="25" Margin="22,400,0,0" VerticalAlignment="Top" Width="66" Click="Button_Click_2" Background="#FFA7A7A7" BorderBrush="Black"/>
+        <DataGrid x:Name="ZDataGrid" HorizontalAlignment="Left" Height="361" Margin="247,43,0,0" VerticalAlignment="Top" Width="709" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="ZDataGrid_SelectionChanged"/>
+        <TextBox Name="email" HorizontalAlignment="Left" Height="24" Margin="97,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <TextBox Name="tip" HorizontalAlignment="Left" Height="24" Margin="97,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <TextBox Name="adresa" HorizontalAlignment="Left" Height="24" Margin="97,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <TextBox Name="telefon" HorizontalAlignment="Left" Height="24" Margin="97,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <Label Content="Telefon" HorizontalAlignment="Left" Height="28" Margin="13,272,0,0" VerticalAlignment="Top" Width="84"/>
+        <Label Content="Email" HorizontalAlignment="Left" Height="28" Margin="13,239,0,0" VerticalAlignment="Top" Width="84"/>
+        <Label Content="Admin" HorizontalAlignment="Left" Height="28" Margin="13,301,0,0" VerticalAlignment="Top" Width="84"/>
+        <TextBox Name="id" HorizontalAlignment="Left" Height="24" Margin="204,305,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" Visibility="Hidden"/>
+        <ComboBox Name="admin" HorizontalAlignment="Left" Margin="97,303,0,0" VerticalAlignment="Top" Width="102" Height="32" Loaded="load"/>
+        <Separator HorizontalAlignment="Left" Height="13" Margin="18,335,0,0" VerticalAlignment="Top" Width="204" Background="Black"/>
+        <Separator HorizontalAlignment="Left" Height="13" Margin="18,26,0,0" VerticalAlignment="Top" Width="204" Background="Black"/>
+        <Label Content="ZAPOSLENI" HorizontalAlignment="Left" Height="28" Margin="49,6,0,0" VerticalAlignment="Top" Width="142" FontWeight="Bold" FontSize="18" FontFamily="Arial Black"/>
+
+    </Grid>
+</Page>
